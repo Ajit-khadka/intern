@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav-link{
+  cursor: pointer;
+}
+
+.nav-link:hover{
+  color: #BB78A4;
+  transition: ease-in-out;
+  transition-duration: 0.3s;
+  transition-delay: 0.1s;
+
+}
+
+/* App.jsx */
+.gobalpadding{
+  padding: 0 10%;
+}
+
+/* UserInfo */
+.Profile{
+  width: 400px;
+}
+
+ .About{
+  width: 405px;
+}
+
+ .sidenav{
+  display: none;
+}
+
+.sidenavContainer{
+  display: none;
+}
+
+.heading{
+  padding: 0 50px;
+}
+
+/* media Query */
+
+@media (max-width: 1200px){
+
+  /* App.jsx */
+  .gobalpadding{
+    padding: 0 5%;
+  }
+
+}
+
+@media (max-width: 1024px){
+
+  /* App.jsx */
+  .gobalpadding{
+    padding: 0 4%;
+  }
+
+}
+
+@media (max-width: 980px){
+
+  .extraContainer{
+    padding: 0 5%;
+    margin-top: 30px;
+  }
+
+   /* UserInfo.jsx */
+  section .model{
+    height: 310px;
+    width: 320px;
+    margin-bottom: 16px;
+  }
+
+  section .modelback{
+    height: 280px;
+    width: 280px;
+  }
+
+  section .bordercircle{
+    height: 330px;
+    width: 330px;
+  }
+  
+
+  section .modelmoon{
+    height: 20px;
+    width: 20px;
+    right: 18px;
+  }
+
+  .userInfoContainer{
+    margin-top: 10px;
+    
+  }
+
+  .About, .Profile{
+    margin: 10px;
+  }
+
+  div .learnCircle{
+    height: 100px;
+    width: 100px;
+  }
+
+  section .title{
+    font-size: 40px;
+  }
+
+  .gobalpadding{
+    padding: 0%;
+  }
+
+  .heading{
+    padding: 0 5%;
+    font-size: 14px;
+  }
+
+
+
+}
+
+@media (max-width: 900px){
+ 
+  
+  .userInfoContainer{
+    align-items: center;
+    margin: 0 5%;  
+  }
+
+  .userInfoContainer{
+    align-self: center;
+    flex-direction: column-reverse;
+  }
+
+  .About, .Profile{
+    margin: 0px;
+  }
+
+}
+
+@media (max-width: 870px){
+  .navlinks{
+    display: none;
+}
+
+.sidenavContainerParent{
+    display: absolute;
+    z-index: 100;
+    height: 100%;
+    width: 100%;
+    overflow-y: hidden;
+   
+    
+}
+
+.sidenavContainer{
+    transform: translatey(100vh);
+    transition-timing-function:ease-out;
+    transition-duration: 0.5s;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    display: block;
+    z-index: 3;
+    background-color: #be9eb3;
+    
+    
+}
+.sidenavElements{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    list-style: none;    
+}
+
+.sidenavElements li{
+    margin-bottom: 8px;
+}
+
+.sidenavElements a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.eliminate{
+    transition-timing-function:ease-out;
+    transition-duration: 0.5s;
+    transform: translatey(0vh);
+}
+
+.head{
+    padding: 18px;
+    background: rgb(242, 240, 235);
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+.sidenav{
+    display: block;
+  
+}
+
+}
+
+.gobalpadding{
+  background-color: #FFFFFF;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3Cellipse fill='none' stroke-width='1' id='a' rx='600' ry='450'/%3E%3C/defs%3E%3Cg style='transform-origin:center'%3E%3Cg transform='rotate(165.6 0 0)' style='transform-origin:center'%3E%3Cg transform='rotate(-160 0 0)' style='transform-origin:center'%3E%3Cg transform='translate(1000 750)'%3E%3Cuse stroke='%23FFC4D1' href='%23a' transform='rotate(-60 0 0) scale(0.4)'/%3E%3Cuse stroke='%23ffc5d3' href='%23a' transform='rotate(-50 0 0) scale(0.5)'/%3E%3Cuse stroke='%23ffc6d5' href='%23a' transform='rotate(-40 0 0) scale(0.6)'/%3E%3Cuse stroke='%23ffc7d7' href='%23a' transform='rotate(-30 0 0) scale(0.7)'/%3E%3Cuse stroke='%23ffc8d9' href='%23a' transform='rotate(-20 0 0) scale(0.8)'/%3E%3Cuse stroke='%23ffc9db' href='%23a' transform='rotate(-10 0 0) scale(0.9)'/%3E%3Cuse stroke='%23ffcadd' href='%23a'/%3E%3Cuse stroke='%23ffccdf' href='%23a' transform='rotate(10 0 0) scale(1.1)'/%3E%3Cuse stroke='%23ffcde1' href='%23a' transform='rotate(20 0 0) scale(1.2)'/%3E%3Cuse stroke='%23ffcee3' href='%23a' transform='rotate(30 0 0) scale(1.3)'/%3E%3Cuse stroke='%23ffcfe5' href='%23a' transform='rotate(40 0 0) scale(1.4)'/%3E%3Cuse stroke='%23ffd0e6' href='%23a' transform='rotate(50 0 0) scale(1.5)'/%3E%3Cuse stroke='%23ffd1e8' href='%23a' transform='rotate(60 0 0) scale(1.6)'/%3E%3Cuse stroke='%23ffd2ea' href='%23a' transform='rotate(70 0 0) scale(1.7)'/%3E%3Cuse stroke='%23ffd3ec' href='%23a' transform='rotate(80 0 0) scale(1.8)'/%3E%3Cuse stroke='%23ffd5ed' href='%23a' transform='rotate(90 0 0) scale(1.9)'/%3E%3Cuse stroke='%23ffd6ef' href='%23a' transform='rotate(100 0 0) scale(2)'/%3E%3Cuse stroke='%23ffd7f1' href='%23a' transform='rotate(110 0 0) scale(2.1)'/%3E%3Cuse stroke='%23ffd8f3' href='%23a' transform='rotate(120 0 0) scale(2.2)'/%3E%3Cuse stroke='%23ffd9f4' href='%23a' transform='rotate(130 0 0) scale(2.3)'/%3E%3Cuse stroke='%23ffdbf6' href='%23a' transform='rotate(140 0 0) scale(2.4)'/%3E%3Cuse stroke='%23ffdcf7' href='%23a' transform='rotate(150 0 0) scale(2.5)'/%3E%3Cuse stroke='%23FFDDF9' href='%23a' transform='rotate(160 0 0) scale(2.6)'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+}
+
+@media (max-width: 740px){
+
+  .extraContainer{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+  }
+
+  .plantsContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .heading{
+    background-color: white;
+  }
+
+}
+
+@media (max-width: 440px){
+  
+  .Profile{
+    margin: 0;
+    width: 300px;
+   
+  }
+
+  .heading{
+    padding: 15px;
+  }
+
+  .userInfoContainer{
+  
+    align-items: center;
+    margin: 0 ;  
+  }
+
+  div .circle{
+    top: 40vh;
+    left: -50px;
+  }
+
+  .About{
+    width: 300px;
+  }
+
+  section .title{
+    font-size: 30px;
+    width: 300px;
+  }
+
+  section .description{
+    width: 300px;
+  }
+
+  div .learnCircleContainer{
+    width: 300px;
+  }
+
+  section .bordercircle{
+    
+    height: 260px;
+    width: 260px;
+  }
+
+  section .modelback{
+
+    padding: 0;
+    height: 230px;
+    width: 230px;
+  }
+
+  section .model{
+    height: 250px;
+    
+    width: 260px;
+    margin-bottom: 11px;
+  }
+
+  section .modelmoon{
+    
+    height: 15px;
+    width: 15px;
+    right: 7px;
+  }
+}
